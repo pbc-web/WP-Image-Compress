@@ -1,0 +1,18 @@
+{
+    "name": "poweredbycoffee/image-compress",
+    "description": "Compresses Images using JpegOptim, Gifsicle & PngOptim when uploaded or resized to WordPress",
+    "type": "wordpress-muplugin",
+    "require-dev": {
+        
+    },
+    "authors": [
+        {
+            "name": "Stewart Ritchie",
+            "email": "stewart@poweredbycoffee.co.uk"
+        }
+    ],
+    "require": {
+        "bensquire/php-image-optim": "dev-master",
+        "lciolecki/php-image-optimizer": "dev-master"
+    }
+}
