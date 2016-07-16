@@ -6,13 +6,18 @@ Handy Little Must Use Plugin for WordPress.
 Performs lossless compression on Jpeg, PNG & Gif Images using JpegOptim, OpimPNG & Gifsicle
 
 ## Requirements 
-- _Installed on Server_
+- **Installed on Server**
   - JpegOptim
   - Gifsicle
   - OptimPNG
-- _PHP setup_
+- **PHP setup**
   - Access to `exec()` function
 
+## Installation
+Clone the directory into your mu-plugins.  The plugin will be active automatically and start compressing new images as they are uploaded.  
+
+##Important##
+This will not compress images already in your Media Library!  It will only work on newly uploaded images.
 
 ## Upcoming/Roadmap
 - More PNG Compression Options
@@ -22,5 +27,7 @@ Performs lossless compression on Jpeg, PNG & Gif Images using JpegOptim, OpimPNG
 - Compress on Demand
 - Filterable locations for locating the tools
 - Improve the Tool Loader to use less RAM
+- Internationalisation
+- Include required Binaries with the Plugin
 
 
