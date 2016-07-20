@@ -25,6 +25,7 @@ class WP_Image_Editor_GD_Compress extends WP_Image_Editor_GD {
 	 */
 	protected function _save( $image, $filename = null, $mime_type = null ) {
 
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-pbc-image-compressor.php';
 		$compressor = PBC_Image_Compress_Compressor::get_instance();
 
 		list( $filename, $extension, $mime_type ) = $this->get_output_format( $filename, $mime_type );

@@ -109,6 +109,7 @@ class Pbc_Image_Compress_Admin {
 	public function add_editor_to_impimentations($implimentations){
 
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-image-editor-gd-compress.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-image-editor-imagemagik-compress.php';
 
 		$new = array_unshift($implimentations, "WP_Image_Editor_Imagick_Compress", "WP_Image_Editor_GD_Compress");
 		
