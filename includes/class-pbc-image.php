@@ -1,10 +1,10 @@
 <?php
 
-Class PBC_Compress_Image(){
+Class PBC_Compress_Image{
 
 	var $url;
 	var $uri;
-	var $compressor
+	var $compressor;
 
 	function __construct($url, $compressor){
 		$this->url = $url;
@@ -13,7 +13,7 @@ Class PBC_Compress_Image(){
 
 	function url_to_uri(){
 		$upload = wp_get_upload_dir();
-		$this->uri = str_replace($upload['baseurl'], $upload['basedie'] $this->url);
+		$this->uri = str_replace($upload['baseurl'], $upload['basedie'], $this->url);
 	}
 
 	function compress(){
